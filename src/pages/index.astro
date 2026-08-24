@@ -5,32 +5,32 @@ const phone = "866-891-9778";
 const city = "Silver Spring";
 const niche = "Roofing";
 const serviceImage = "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1200&q=80";
-const truckImage = "https://sc02.alicdn.com/kf/A5dd3b365fb234f248e7bf687501827006.png";
 ---
 
 <Layout 
-	title={`${city.toUpperCase()} MD ${niche.toUpperCase()} | Locally Owned Maryland Roofing Pros`}
-	phone={phone}
-	city={city}
-	niche={niche}
+	title={{\`\${{{city.toUpperCase()}}} MD \${{{niche.toUpperCase()}}} | Locally Owned Maryland Roofing Pros\`}}
+	phone={866-891-9778}
+	city={Silver Spring}
+	niche={Roofing}
 >
-	<!-- 1. HERO SECTION (Golden Template Standard) -->
-	<section class="relative bg-slate-800 py-32 text-center text-white bg-cover bg-center" style={`background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('${serviceImage}');`}>
+	<!-- 1. HERO SECTION -->
+	<section class="relative bg-slate-800 py-32 text-center text-white bg-cover bg-center" style={{\`background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('\${https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1200&q=80}');\`}}>
 		<div class="container mx-auto px-6">
-			<h1 class="text-[50px] md:text-[70px] font-black leading-tight mb-4 uppercase tracking-tighter">{niche} {city} MD</h1>
+			<h1 class="text-[50px] md:text-[70px] font-black leading-tight mb-4 uppercase tracking-tighter">{Roofing} {Silver Spring} MD</h1>
 			<h3 class="text-xl md:text-2xl font-bold mb-10 opacity-90 uppercase tracking-[0.2em]">Locally Owned & Professionally Managed in Maryland</h3>
-			<a href={`tel:${phone.replace(/-/g, '')}`} class="inline-block bg-white text-[#28657c] font-black text-2xl px-12 py-5 border-2 border-white hover:bg-transparent hover:text-white transition-all uppercase tracking-tighter shadow-2xl">
-				CALL NOW {phone}
+			<a href={{\`tel:\${{phone.replace(/-/g, '')}}\` chunks}} class="inline-block bg-white text-[#28657c] font-black text-2xl px-12 py-5 border-2 border-white hover:bg-transparent hover:text-white transition-all uppercase tracking-tighter shadow-2xl">
+				CALL NOW {866-891-9778}
 			</a>
 		</div>
 	</section>
 
-	<!-- 2. TRUST PILLARS & LEAD CAPTURE (70/30 Split) -->
+	<!-- 2. TRUST PILLARS & LEAD CAPTURE -->
 	<section class="py-20 bg-white">
 		<div class="container mx-auto px-6 grid lg:grid-cols-12 gap-16 items-start">
 			<div class="lg:col-span-8">
-				<h2 class="text-4xl font-black text-[#28657c] mb-12 uppercase tracking-tighter">3 REASONS TO TRUST OUR {city.toUpperCase()} {niche.toUpperCase()} TEAM</h2>
+				<h2 class="text-4xl font-black text-[#28657c] mb-12 uppercase tracking-tighter">3 REASONS TO TRUST OUR {{{city.toUpperCase()}}} {{{niche.toUpperCase()}}} TEAM</h2>
 				<div class="space-y-12">
+					
 					<div class="flex gap-8 items-start">
 						<div class="w-20 h-20 flex-shrink-0 bg-[#28657c]/5 rounded-2xl flex items-center justify-center text-4xl shadow-sm">🏠</div>
 						<div>
@@ -68,24 +68,23 @@ const truckImage = "https://sc02.alicdn.com/kf/A5dd3b365fb234f248e7bf68750182700
 					<p id="formStatus" class="text-[11px] text-slate-400 mt-6 text-center uppercase font-black tracking-widest">100% SATISFACTION GUARANTEED</p>
 				</div>
 			</div>
-
-			</div>
 		</div>
 	</section>
 
-	<!-- 3. THE 4-STEP PROCESS (Golden Template Standard) -->
+	<!-- 3. THE 4-STEP PROCESS -->
 	<section class="py-24 bg-slate-50 border-t border-slate-100">
 		<div class="container mx-auto px-6 max-w-5xl">
 			<div class="text-center mb-20">
-				<h2 class="text-5xl font-[900] text-[#28657c] uppercase tracking-tighter mb-4">OUR {city.toUpperCase()} MD {niche.toUpperCase()} PROCESS</h2>
+				<h2 class="text-5xl font-[900] text-[#28657c] uppercase tracking-tighter mb-4">OUR {{{city.toUpperCase()}}} MD {{{niche.toUpperCase()}}} PROCESS</h2>
 				<hr class="w-24 border-b-8 border-[#28657c] mx-auto mt-6" />
 			</div>
 
 			<div class="grid md:grid-cols-4 gap-4">
+				
 				<div class="bg-white p-8 border border-slate-200 shadow-sm relative overflow-hidden group hover:border-[#28657c] transition-all">
 					<div class="text-6xl font-black text-slate-100 absolute -right-2 -top-2 group-hover:text-[#28657c]/10 transition-colors">01</div>
 					<h5 class="font-black text-[#28657c] uppercase mb-4 relative z-10">INSPECTION</h5>
-					<p class="text-sm text-slate-500 relative z-10 leading-relaxed">A comprehensive 25-point audit of your Silver roof's integrity, including a detailed digital report.</p>
+					<p class="text-sm text-slate-500 relative z-10 leading-relaxed">A comprehensive 25-point audit of your Silver Spring roof's integrity, including a detailed digital report.</p>
 				</div>
 				<div class="bg-white p-8 border border-slate-200 shadow-sm relative overflow-hidden group hover:border-[#28657c] transition-all">
 					<div class="text-6xl font-black text-slate-100 absolute -right-2 -top-2 group-hover:text-[#28657c]/10 transition-colors">02</div>
@@ -106,73 +105,15 @@ const truckImage = "https://sc02.alicdn.com/kf/A5dd3b365fb234f248e7bf68750182700
 		</div>
 	</section>
 
-	<!-- 4. INDUSTRIAL AUTHORITY TEXT (Abundant Clarity Standard: 1,100+ Words) -->
-	<section class="py-24 bg-white">
+	<!-- 4. AUTHORITY SECTION -->
+	<section class="py-24 bg-white border-t border-slate-100">
 		<div class="container mx-auto px-6 max-w-4xl">
 			<div class="prose prose-slate prose-lg max-w-none">
-				<h2 class="text-4xl font-black text-[#28657c] uppercase tracking-tighter mb-8">Professional Roofing Excellence in Silver Spring Maryland</h2>
+				<h2 class="text-4xl font-black text-[#28657c] uppercase tracking-tighter mb-8">Professional {Roofing} Excellence in {Silver Spring} Maryland</h2>
 				<p>
-					When it comes to maintaining your property's infrastructure in Silver Spring, Maryland, you cannot afford to take shortcuts. Unlike the big national franchises that use generic call centers, our Roofing team is based right here in Silver Spring. We understand the specific soil and climate conditions of Maryland, and we know exactly how they affect your property.
+					When it comes to maintaining your property's infrastructure in {Silver Spring}, Maryland, you cannot afford to take shortcuts. Unlike the big national franchises that use generic call centers, our {Roofing} team is based right here in {Silver Spring}. We understand the specific local conditions of Maryland and exactly how they affect your property.
 				</p>
-
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">Structural Integrity & Weather Defense in Silver Spring</h3>
-				<p>
-					Your roof is the single most important barrier protecting your Silver Spring home from the elements. In Maryland, roofing systems must endure a wide range of weather conditions—from the freeze-thaw cycles of winter to the intense UV radiation and humidity of summer. We specialize in high-performance roofing systems that are engineered for the specific climate of the Mid-Atlantic.
-				</p>
-                <p>
-                    Our "Abundant Clarity" audit is a comprehensive 25-point inspection of your entire roofing envelope. We don't just look at the shingles; we examine the decking, flashing, drip edges, and ventilation pathways. Proper attic ventilation is critical in Silver Spring to prevent heat buildup in summer and ice damming in winter, both of which can lead to premature roof failure and structural rot.
-                </p>
-
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">Advanced Maryland Roofing Materials</h3>
-                <p>
-                    Technology in the roofing industry has advanced significantly. We offer architectural shingles with enhanced wind resistance ratings to withstand the coastal gusts often seen in areas like Silver Spring and Annapolis. For homeowners looking for longevity, our metal and synthetic slate options provide 50+ year lifespans, offering the best long-term ROI for your Maryland property investment.
-                </p>
-
-                <div class="bg-[#28657c]/5 p-12 rounded-3xl my-16 border-l-8 border-[#28657c]">
-                    <h4 class="text-2xl font-black text-[#28657c] uppercase mb-6">Silver Spring Roof Health Checklist</h4>
-                    <ul class="space-y-4 font-bold text-slate-700">
-                        <li>[ ] SHINGLE AUDIT: Look for curling edges, surface cracks, or bald spots where granules are missing.</li>
-                        <li>[ ] FLASHING INSPECTION: Ensure metal seals around Silver Spring chimneys and vents are tight and rust-free.</li>
-                        <li>[ ] GUTTER FLOW: Clogged gutters cause water to back up under your shingles and rot the fascia.</li>
-                        <li>[ ] ATTIC HUMIDITY: Check for damp insulation or dark stains on the underside of your roof deck.</li>
-                        <li>[ ] GRANULE ACCUMULATION: Excessive sand-like granules in your downspouts indicate shingle aging.</li>
-                    </ul>
-                </div>
-
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">Storm Damage & Emergency Tarps in Silver Spring</h3>
-                <p>
-                    When a Maryland storm strikes, time is of the essence. A small leak can quickly turn into a $10,000 interior restoration project if not addressed. Our Silver Spring emergency response team provides rapid tarping and mitigation services to protect your home while we coordinate with your insurance provider for the permanent repair or replacement. We are experts in the Maryland insurance claim process, ensuring you receive the full coverage your policy provides.
-                </p>
-
-                <h2 class="text-4xl font-black text-[#28657c] uppercase tracking-tighter mt-24 mb-12">Frequently Asked Questions</h2>
-                <div class="space-y-10">
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">How long does a new roof installation take in Silver Spring?</h4>
-                        <p class="text-slate-600">Most residential roof replacements in Silver Spring, MD are completed in 1 to 2 days. We prioritize a clean worksite and use specialized equipment to catch every nail and piece of debris from your lawn.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">Can I just layer new shingles over my old ones?</h4>
-                        <p class="text-slate-600">While possible, it is not recommended in Maryland. A "tear-off" allows us to inspect the roof deck for rot and ensures your new roof meets local Silver Spring building codes and manufacturer warranties.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">What is the cost of Roofing in Silver Spring, MD?</h4>
-                        <p class="text-slate-600">Costs vary based on square footage and material choice. We provide detailed, no-obligation estimates for all Silver Spring homeowners, including financing options to make your project affordable.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">Do you offer a warranty on your work?</h4>
-                        <p class="text-slate-600">Absolutely. We provide both manufacturer material warranties and our own 10-year labor guarantee on all full roof replacements in Silver Spring, Maryland.</p>
-                    </div>
-                </div>
-    
-
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">Maryland Community Stewardship</h3>
-                <p>
-                    As a locally managed service in Silver Spring, MD, we are more than just a business; we are part of the Maryland community. We prioritize hiring local technicians who understand the specific challenges of our region, from the humidity of the Chesapeake to the rocky soils of Northern Baltimore County. Our goal is to provide sustainable, reliable infrastructure maintenance that keeps Maryland properties safe and profitable for decades to come.
-                </p>
-                <p>
-                    By choosing our professional services, you are supporting a network dedicated to "Abundant Clarity" in the service industry. We believe that every property owner in Silver Spring deserves a transparent, data-driven approach to maintenance. Whether it is protecting your home's foundation or ensuring the safety of your trees, we are here to serve our Maryland neighbors with excellence and integrity.
-                </p>
-    
+                
 			</div>
 		</div>
 	</section>
@@ -193,7 +134,7 @@ const truckImage = "https://sc02.alicdn.com/kf/A5dd3b365fb234f248e7bf68750182700
 	const status = document.getElementById('formStatus');
 	const webhookUrl = "https://wandering-king-6c05.empty-math-6c0f.workers.dev";
 
-	form?.addEventListener('submit', async (e) => {
+	form?.addEventListener('submit', async (e) => {{
 		e.preventDefault();
 		const formData = new FormData(form);
 		const data = Object.fromEntries(formData.entries());
@@ -201,22 +142,22 @@ const truckImage = "https://sc02.alicdn.com/kf/A5dd3b365fb234f248e7bf68750182700
 		data.source = window.location.hostname;
 		data.timestamp = new Date().toISOString();
 
-		try {
+		try {{
 			status.textContent = "SENDING REQUEST...";
-			const response = await fetch(webhookUrl, {
+			const response = await fetch(webhookUrl, {{
 				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
+				headers: {{ 'Content-Type': 'application/json' }},
 				body: JSON.stringify(data)
-			});
+			}});
 
-			if (response.ok) {
+			if (response.ok) {{
 				status.textContent = "✅ SUCCESS! WE WILL CALL YOU SHORTLY.";
 				form.reset();
-			} else {
+			}} else {{
 				throw new Error();
-			}
-		} catch (err) {
+			}}
+		}} catch (err) {{
 			status.textContent = "❌ ERROR SENDING. PLEASE CALL US NOW.";
-		}
-	});
+		}}
+	}});
 </script>
